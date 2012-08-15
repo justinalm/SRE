@@ -1,0 +1,142 @@
+<?php include("header.php"); ?>
+
+  <div class="container">
+
+    <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="page-header">
+      <h1>Sale Listings</h1>
+    </div>
+    <div class="row">
+      <div class="span12">
+        <p>Filter by:</p>
+        <a class="btn btn-info" href="listings-lease.php"style="width: 70px;">Lease</a>
+        <a class="btn btn-info" href="listings-sale.php"style="width: 70px;">Sale</a>      
+      </div>
+    </div>
+
+    <!-- List of Sale Properties -->
+
+     <div class="row">
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+     </div>
+     
+     <div class="row">
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+     </div>
+     
+     <div class="row">
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+     </div>
+     
+     <div class="row">
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+       <a href="single-listing.php"><div class="span3">
+         <p><img src="http://placehold.it/370x270" alt=""></p>
+         <h2>Property</h2>
+         <p style="color: #fff;">Donec id elit non mi porta gravida at eget metus.</p>
+       </div></a>
+     </div>     
+  
+
+      <div class="row">
+       <div class="span4">   
+         <div class="pagination">
+           <ul>
+             <li><a href="#">Prev</a></li>
+             <li class="active">
+               <a href="#">1</a>
+             </li>
+             <li><a href="#">2</a></li>
+             <li><a href="#">3</a></li>
+             <li><a href="#">4</a></li>
+             <li><a href="#">Next</a></li>
+           </ul>
+         </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="span12">
+        <ul class="pager">
+          <li class="previous">
+            <a href="clients.php">&larr; Our clients</a>
+          </li>
+          <li class="next">
+            <a href="careers.php">Careers at SRE &rarr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+<?php include("footer.php"); ?>

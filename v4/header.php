@@ -41,7 +41,7 @@
               <li><a href="services.php">Services</a></li>
               <li><a href="tenant.php">Tenant</a></li>
               <li><a href="clients.php">Clients</a></li>
-              <li><a href="properties.php">Properties</a></li>
+              <li><a href="listings.php">Listings</a></li>
               <li><a href="careers.php">Careers</a></li>
               <li><a data-toggle="modal" href="#myModal" >Contact</a></li>                                          
             </ul>

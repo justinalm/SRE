@@ -10,55 +10,55 @@
 
  @font-face {
       font-family: 'TradeGothicLTStdRegular';
-      src: url('../assets/fonts/tradegothicltstd-webfont.eot');
-      src: url('../assets/fonts/tradegothicltstd-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../assets/fonts/tradegothicltstd-webfont.woff') format('woff'),
-           url('../assets/fonts/tradegothicltstd-webfont.ttf') format('truetype'),
-           url('../assets/fonts/tradegothicltstd-webfont.svg#TradeGothicLTStdRegular') format('svg');
+      src: url('../fonts/tradegothicltstd-webfont.eot');
+      src: url('../fonts/tradegothicltstd-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/tradegothicltstd-webfont.woff') format('woff'),
+           url('../fonts/tradegothicltstd-webfont.ttf') format('truetype'),
+           url('../fonts/tradegothicltstd-webfont.svg#TradeGothicLTStdRegular') format('svg');
       font-weight: normal;
       font-style: normal;
   }
   
     @font-face {
         font-family: 'TradeGothicLTStd-Bd2';
-        src: url('../assets/fonts/tradegothicltstd-bd2-webfont.eot');
-        src: url('../assets/fonts/tradegothicltstd-bd2-webfont.eot?#iefix') format('embedded-opentype'),
-             url('../assets/fonts/tradegothicltstd-bd2-webfont.woff') format('woff'),
-             url('../assets/fonts/tradegothicltstd-bd2-webfont.ttf') format('truetype'),
-             url('../assets/fonts/tradegothicltstd-bd2-webfont.svg#TradeGothicLTStdBold') format('svg');
+        src: url('../fonts/tradegothicltstd-bd2-webfont.eot');
+        src: url('../fonts/tradegothicltstd-bd2-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/tradegothicltstd-bd2-webfont.woff') format('woff'),
+             url('../fonts/tradegothicltstd-bd2-webfont.ttf') format('truetype'),
+             url('../fonts/tradegothicltstd-bd2-webfont.svg#TradeGothicLTStdBold') format('svg');
         font-weight: normal;
         font-style: normal;
     }
     
     @font-face {
         font-family: 'TradeGothicLTStd-BdCn20';
-        src: url('../assets/fonts/tradegothicltstd-bdcn20-webfont.eot');
-        src: url('../assets/fonts/tradegothicltstd-bdcn20-webfont.eot?#iefix') format('embedded-opentype'),
-             url('../assets/fonts/tradegothicltstd-bdcn20-webfont.woff') format('woff'),
-             url('../assets/fonts/tradegothicltstd-bdcn20-webfont.ttf') format('truetype'),
-             url('../assets/fonts/tradegothicltstd-bdcn20-webfont.svg#TradeGothicLTStdCnBold') format('svg');
+        src: url('../fonts/tradegothicltstd-bdcn20-webfont.eot');
+        src: url('../fonts/tradegothicltstd-bdcn20-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/tradegothicltstd-bdcn20-webfont.woff') format('woff'),
+             url('../fonts/tradegothicltstd-bdcn20-webfont.ttf') format('truetype'),
+             url('../fonts/tradegothicltstd-bdcn20-webfont.svg#TradeGothicLTStdCnBold') format('svg');
         font-weight: bold;
         font-style: normal;
     }
     
     @font-face {
         font-family: 'TradeGothicLTStd-Light';
-        src: url('../assets/fonts/tradegothicltstd-light-webfont.eot');
-        src: url('../assets/fonts/tradegothicltstd-light-webfont.eot?#iefix') format('embedded-opentype'),
-             url('../assets/fonts/tradegothicltstd-light-webfont.woff') format('woff'),
-             url('../assets/fonts/tradegothicltstd-light-webfont.ttf') format('truetype'),
-             url('../assets/tradegothicltstd-light-webfont.svg#TradeGothicLTStdLightRegular') format('svg');
+        src: url('../fonts/tradegothicltstd-light-webfont.eot');
+        src: url('../fonts/tradegothicltstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/tradegothicltstd-light-webfont.woff') format('woff'),
+             url('../fonts/tradegothicltstd-light-webfont.ttf') format('truetype'),
+             url('../tradegothicltstd-light-webfont.svg#TradeGothicLTStdLightRegular') format('svg');
         font-weight: light;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'TradeGothicLTStd-Obl';
-        src: url('../assets/fonts/tradegothicltstd-obl-webfont.eot');
-        src: url('../assets/fonts/tradegothicltstd-obl-webfont.eot?#iefix') format('embedded-opentype'),
-             url('../assets/fonts/tradegothicltstd-obl-webfont.woff') format('woff'),
-             url('../assets/fonts/tradegothicltstd-obl-webfont.ttf') format('truetype'),
-             url('../assets/fonts/tradegothicltstd-obl-webfont.svg#TradeGothicLTStdItalic') format('svg');
+        src: url('../fonts/tradegothicltstd-obl-webfont.eot');
+        src: url('../fonts/tradegothicltstd-obl-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/tradegothicltstd-obl-webfont.woff') format('woff'),
+             url('../fonts/tradegothicltstd-obl-webfont.ttf') format('truetype'),
+             url('../fonts/tradegothicltstd-obl-webfont.svg#TradeGothicLTStdItalic') format('svg');
         font-weight: normal;
         font-style: italic;
     }

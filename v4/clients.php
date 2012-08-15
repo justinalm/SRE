@@ -116,7 +116,7 @@
            <a href="tenant.php">&larr; Our tenants</a>
          </li>
          <li class="next">
-           <a href="properties.php">Properties &rarr;</a>
+           <a href="listings.php">Listings &rarr;</a>
          </li>
        </ul>
      </div>
