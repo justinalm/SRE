@@ -6,26 +6,59 @@
   
   <style type="text/css" media="screen">
     
+  @font-face {
+      font-family: 'TradeGothicLTStdRegular';
+      src: url('fonts/tradegothicltstd-webfont.eot');
+      src: url('fonts/tradegothicltstd-webfont.eot?#iefix') format('embedded-opentype'),
+           url('fonts/tradegothicltstd-webfont.woff') format('woff'),
+           url('fonts/tradegothicltstd-webfont.ttf') format('truetype'),
+           url('fonts/tradegothicltstd-webfont.svg#TradeGothicLTStdRegular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+
+  }
     @font-face {
-        font-family: 'FjordOne';
-        src: url('fonts/FjordOne-Regular-webfont.eot');
-        src: url('fonts/FjordOne-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-             url('fonts/FjordOne-Regular-webfont.woff') format('woff'),
-             url('fonts/FjordOne-Regular-webfont.ttf') format('truetype'),
-             url('fonts/FjordOne-Regular-webfont.svg#FjordOne') format('svg');
+        font-family: 'TradeGothicLTStdBold';
+        src: url('fonts/tradegothicltstd-bd2-webfont.eot');
+        src: url('fonts/tradegothicltstd-bd2-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/tradegothicltstd-bd2-webfont.woff') format('woff'),
+             url('fonts/tradegothicltstd-bd2-webfont.ttf') format('truetype'),
+             url('fonts/tradegothicltstd-bd2-webfont.svg#TradeGothicLTStdBold') format('svg');
         font-weight: normal;
+        font-style: normal;
+
+    }
+    @font-face {
+        font-family: 'TradeGothicLTStdCnBold';
+        src: url('fonts/tradegothicltstd-bdcn20-webfont.eot');
+        src: url('fonts/tradegothicltstd-bdcn20-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/tradegothicltstd-bdcn20-webfont.woff') format('woff'),
+             url('fonts/tradegothicltstd-bdcn20-webfont.ttf') format('truetype'),
+             url('fonts/tradegothicltstd-bdcn20-webfont.svg#TradeGothicLTStdCnBold') format('svg');
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'TradeGothicLTStdLightRegular';
+        src: url('fonts/tradegothicltstd-light-webfont.eot');
+        src: url('fonts/tradegothicltstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/tradegothicltstd-light-webfont.woff') format('woff'),
+             url('fonts/tradegothicltstd-light-webfont.ttf') format('truetype'),
+           url('tradegothicltstd-light-webfont.svg#TradeGothicLTStdLightRegular') format('svg');
+        font-weight: light;
         font-style: normal;
     }
     
     @font-face {
-        font-family: 'TradeGothicLTStdExtendedBold';
-        src: url('fonts/tradegothicltstd-boldext-webfont.eot');
-        src: url('fonts/tradegothicltstd-boldext-webfont.eot?#iefix') format('embedded-opentype'),
-             url('fonts/tradegothicltstd-boldext-webfont.woff') format('woff'),
-             url('fonts/tradegothicltstd-boldext-webfont.ttf') format('truetype'),
-             url('fonts/tradegothicltstd-boldext-webfont.svg#TradeGothicLTStdExtendedBold') format('svg');
+        font-family: 'TradeGothicLTStdItalic';
+        src: url('fonts/tradegothicltstd-obl-webfont.eot');
+        src: url('fonts/tradegothicltstd-obl-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/tradegothicltstd-obl-webfont.woff') format('woff'),
+             url('fonts/tradegothicltstd-obl-webfont.ttf') format('truetype'),
+             url('fonts/tradegothicltstd-obl-webfont.svg#TradeGothicLTStdItalic') format('svg');
         font-weight: normal;
-        font-style: normal;
+        font-style: italic;
+
     }
     
     /*! normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
@@ -246,10 +279,10 @@
     /* Light grey: #AEB0B2 */
     /* Lightest grey: #888888 */
     
-    html { background: url('img/use_your_illusion.png'); }
-    body { color: #ECECEC; font: 1em/1.7 'FjordOne', Georgia, Serif; margin: 0 auto 0 auto; max-width: 60em; }
+    html { background: #111; }
+    body { color: #ECECEC; font: 1em/1.7 'Helvetica Neue', Georgia, Serif; margin: 0 auto 0 auto; max-width: 60em; }
     
-    header { color: #29649F; background: #ECECEC; padding: 1em; border-radius: 0px 0px 3px 3px / 0px 0px 3px 3px; -webkit-box-shadow: 0 8px 6px -6px gray; -moz-box-shadow: 0 8px 6px -6px gray; box-shadow: 0 8px 6px -6px gray; }
+    header { color: #ECECEC; background: #222; padding: 1em; border-radius: 0px 0px 3px 3px / 0px 0px 3px 3px; -webkit-box-shadow: 0 8px 6px -6px gray; -moz-box-shadow: 0 8px 6px -6px gray; box-shadow: 0 8px 6px -6px gray; }
 
     footer { color: #29649F; background: #ECECEC; font-size: 0.75em; margin: 2em 0 0 0; padding: 1em; border-radius: 3px 3px 0px 0px / 3px 3px 0px 0px;}
     
