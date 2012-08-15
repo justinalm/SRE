@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>SRE Style Two</title>
+  
+  <style type="text/css" media="screen">
+    
+    @font-face {
+        font-family: 'FjordOne';
+        src: url('fonts/FjordOne-Regular-webfont.eot');
+        src: url('fonts/FjordOne-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/FjordOne-Regular-webfont.woff') format('woff'),
+             url('fonts/FjordOne-Regular-webfont.ttf') format('truetype'),
+             url('fonts/FjordOne-Regular-webfont.svg#FjordOne') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'TradeGothicLTStdExtendedBold';
+        src: url('fonts/tradegothicltstd-boldext-webfont.eot');
+        src: url('fonts/tradegothicltstd-boldext-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/tradegothicltstd-boldext-webfont.woff') format('woff'),
+             url('fonts/tradegothicltstd-boldext-webfont.ttf') format('truetype'),
+             url('fonts/tradegothicltstd-boldext-webfont.svg#TradeGothicLTStdExtendedBold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    /*! normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+    article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary { display: block; }
+
+    audio,canvas,video { display: inline-block; *display: inline; *zoom: 1; }
+
+    audio:not([controls]) { display: none; height: 0; }
+
+    [hidden] { display: none; }
+
+    html { font-size: 100%; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ -ms-text-size-adjust: 100%; /* 2 */ }
+
+    html,button,input,select,textarea { font-family: sans-serif; }
+    body { margin: 0; }
+
+    a:focus { outline: thin dotted; }
+    a:active, a:hover { outline: 0; }
+
+    h1 { font-size: 2em; margin: 0.67em 0; }
+    h2 { font-size: 1.5em; margin: 0.83em 0; }
+    h3 { font-size: 1.17em; margin: 1em 0; }
+    h4 { font-size: 1em; margin: 1.33em 0; }
+    h5 { font-size: 0.83em; margin: 1.67em 0; }
+    h6 { font-size: 0.75em; margin: 2.33em 0; }
+
+    abbr[title] {
+        border-bottom: 1px dotted;
+    }
+
+    b,
+    strong {
+        font-weight: bold;
+    }
+
+    blockquote {
+        margin: 1em 40px;
+    }
+
+    dfn {
+        font-style: italic;
+    }
+    mark {
+        background: #ff0;
+        color: #000;
+    }
+
+    p,
+    pre {
+        margin: 1em 0;
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: monospace, serif;
+        _font-family: 'courier new', monospace;
+        font-size: 1em;
+    }
+
+    pre {
+        white-space: pre;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    q {
+        quotes: none;
+    }
+
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+
+    small {
+        font-size: 75%;
+    }
+
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+
+    sup {
+        top: -0.5em;
+    }
+
+    sub {
+        bottom: -0.25em;
+    }
+
+    dl,
+    menu,
+    ol,
+    ul {
+        margin: 1em 0;
+    }
+
+    dd {
+        margin: 0 0 0 40px;
+    }
+
+    menu,
+    ol,
+    ul {
+        padding: 0 0 0 40px;
+    }
+
+    nav ul,
+    nav ol {
+        list-style: none;
+        list-style-image: none;
+    }
+
+    img {
+        border: 0; /* 1 */
+        -ms-interpolation-mode: bicubic; /* 2 */
+    }
+
+    svg:not(:root) {
+        overflow: hidden;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    fieldset {
+        border: 1px solid #c0c0c0;
+        margin: 0 2px;
+        padding: 0.35em 0.625em 0.75em;
+    }
+
+    legend {
+        border: 0; /* 1 */
+        padding: 0;
+        white-space: normal; /* 2 */
+        *margin-left: -7px; /* 3 */
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 100%; /* 1 */
+        margin: 0; /* 2 */
+        vertical-align: baseline; /* 3 */
+        *vertical-align: middle; /* 3 */
+    }
+
+    button,
+    input {
+        line-height: normal;
+    }
+
+    button,
+    html input[type="button"], /* 1 */
+    input[type="reset"],
+    input[type="submit"] {
+        -webkit-appearance: button; /* 2 */
+        cursor: pointer; /* 3 */
+        *overflow: visible;  /* 4 */
+    }
+
+    button[disabled],
+    input[disabled] {
+        cursor: default;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        box-sizing: border-box; /* 1 */
+        padding: 0; /* 2 */
+        *height: 13px; /* 3 */
+        *width: 13px; /* 3 */
+    }
+
+    input[type="search"] {
+        -webkit-appearance: textfield; /* 1 */
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box; /* 2 */
+        box-sizing: content-box;
+    }
+
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
+    textarea {
+        overflow: auto; /* 1 */
+        vertical-align: top; /* 2 */
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    /* Dark blue: #29649F */
+    /* Dark brown: #5D5D5D */
+    /* Light grey: #AEB0B2 */
+    /* Lightest grey: #888888 */
+    
+    html { background: url('img/use_your_illusion.png'); }
+    body { color: #ECECEC; font: 1em/1.7 'FjordOne', Georgia, Serif; margin: 0 auto 0 auto; max-width: 60em; }
+    
+    header { color: #29649F; background: #ECECEC; padding: 1em; border-radius: 0px 0px 3px 3px / 0px 0px 3px 3px; -webkit-box-shadow: 0 8px 6px -6px gray; -moz-box-shadow: 0 8px 6px -6px gray; box-shadow: 0 8px 6px -6px gray; }
+
+    footer { color: #29649F; background: #ECECEC; font-size: 0.75em; margin: 2em 0 0 0; padding: 1em; border-radius: 3px 3px 0px 0px / 3px 3px 0px 0px;}
+    
+    strong { font-family: 'FjordOne'; font-style: bold; }
+    em { font-family: 'FjordOne'; font-style: italic; }
+    
+    .wrap { padding: 0 1em 0 1em; }
+    
+    p { margin: 0.25em 0; }
+    p+p { margin-top: 1em; }
+    
+    a { color: #29649F; text-decoration: none; font-weight: bold; }
+    a:hover { color: #ECECEC; border-bottom: 1px solid; }
+    
+    ul { list-style: none; margin: 0; padding-left: 1em;}
+    ul li:before { content: '→ ';}
+    ol { margin: 0; padding-left: 1.5em; }
+    
+    h1, h2, h3, h4 { color: #296492; font-family: 'TradeGothicLTStdExtendedBold'; }
+    h1 { margin: 1em 0 0.25em 0; text-transform: uppercase; font-family: 'TradeGothicLTStdExtendedBold'; }
+    h2 { margin: 1em 0 0.25em 0; font-family: 'TradeGothicLTStdExtendedBold'; }
+    h3 { margin: 1em 0 0.25em 0; font-family: 'TradeGothicLTStdExtendedBold'; }
+    
+    h4 { font-weight: normal; color: #666; margin: 0; }
+    
+    blockquote { font-family: 'TradeGothicLTStdExtendedBold', 'Helvetica Neue', Helvetica, sans-serif; padding: 0.75em; color: #ECECEC; font-size: 1.65em; letter-spacing: 0.1em; margin: 0.75em 0 0 1.5em; }
+    
+    .btn { text-align: center; display: block; padding: 0.75em; background: #296492; color: #ECECEC; line-height: 1.8em; border-radius: 0.2em; width: 10em; margin: 1em 0; border: 1px solid #ECECEC;}
+    .btn:hover { color: #296492; background: #ECECEC; border: 1px solid #29649F;}
+    
+    span.icon {}
+    
+    img {max-width: 100%;}    
+    
+  </style>
+  
+</head>
+
+<body id="home" onload="">
+  
+  <div class="wrap">
+    
+    <header>
+  <img src="img/strategic_dark.png" />
+    </header>
+    
+    <h1>This is an Example of a Header</h1>
+    <h4>Trade Gothic Condensed No2, #29649F</h4>
+
+    <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+    
+    <a class="btn" href="#">This is a Button&nbsp;&nbsp;&nbsp;&#8658;</a>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h2>A sub header describing a list</h2>
+
+    <ol>
+       <li>Ordered by number, the first item.</li>
+       <li>The second item.</li>
+    </ol>
+
+    <blockquote><p>This is a blockquote, if you have a larger quote, something that should really be considered, something worth reading quoted by a special kind of someone, perhaps this is the sort of quote you are looking for?</p></blockquote>
+
+    <h3>The third and last level of header</h3>
+
+    <ul>
+       <li>A list, defined by bullet points but styled with an arrow(i.e. Strategic&rsquo;s logo/word mark.)</li>
+       <li>The second bullet point.</li>
+    </ul>
+    
+    <footer>
+      <p>You can write copyright stuff, put some important links in the footer, etc.</p>
+    </footer>
+    
+ <!--<img src="img/Style_Tile_Template.jpg" />-->
+  </div><!-- .wrap -->
+  
+</body>
+
+</html>

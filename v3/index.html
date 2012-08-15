@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>SRE Style Three</title>
+  
+  <style type="text/css" media="screen">
+    
+    @font-face {
+        font-family: 'TradeGothicLTStdRegular';
+        src: url('fonts/tradegothicltstd-webfont.eot');
+        src: url('fonts/tradegothicltstd-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/tradegothicltstd-webfont.woff') format('woff'),
+             url('fonts/tradegothicltstd-webfont.ttf') format('truetype'),
+             url('fonts/tradegothicltstd-webfont.svg#TradeGothicLTStdRegular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+      @font-face {
+          font-family: 'TradeGothicLTStdBold';
+          src: url('fonts/tradegothicltstd-bd2-webfont.eot');
+          src: url('fonts/tradegothicltstd-bd2-webfont.eot?#iefix') format('embedded-opentype'),
+               url('fonts/tradegothicltstd-bd2-webfont.woff') format('woff'),
+               url('fonts/tradegothicltstd-bd2-webfont.ttf') format('truetype'),
+               url('fonts/tradegothicltstd-bd2-webfont.svg#TradeGothicLTStdBold') format('svg');
+          font-weight: normal;
+          font-style: normal;
+
+      }
+      @font-face {
+          font-family: 'TradeGothicLTStdCnBold';
+          src: url('fonts/tradegothicltstd-bdcn20-webfont.eot');
+          src: url('fonts/tradegothicltstd-bdcn20-webfont.eot?#iefix') format('embedded-opentype'),
+               url('fonts/tradegothicltstd-bdcn20-webfont.woff') format('woff'),
+               url('fonts/tradegothicltstd-bdcn20-webfont.ttf') format('truetype'),
+               url('fonts/tradegothicltstd-bdcn20-webfont.svg#TradeGothicLTStdCnBold') format('svg');
+          font-weight: bold;
+          font-style: normal;
+      }
+      @font-face {
+          font-family: 'TradeGothicLTStdLightRegular';
+          src: url('fonts/tradegothicltstd-light-webfont.eot');
+          src: url('fonts/tradegothicltstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+               url('fonts/tradegothicltstd-light-webfont.woff') format('woff'),
+               url('fonts/tradegothicltstd-light-webfont.ttf') format('truetype'),
+             url('tradegothicltstd-light-webfont.svg#TradeGothicLTStdLightRegular') format('svg');
+          font-weight: light;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'TradeGothicLTStdItalic';
+          src: url('fonts/tradegothicltstd-obl-webfont.eot');
+          src: url('fonts/tradegothicltstd-obl-webfont.eot?#iefix') format('embedded-opentype'),
+               url('fonts/tradegothicltstd-obl-webfont.woff') format('woff'),
+               url('fonts/tradegothicltstd-obl-webfont.ttf') format('truetype'),
+               url('fonts/tradegothicltstd-obl-webfont.svg#TradeGothicLTStdItalic') format('svg');
+          font-weight: normal;
+          font-style: italic;
+
+      }
+    
+    /*! normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+    article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary { display: block; }
+
+    audio,canvas,video { display: inline-block; *display: inline; *zoom: 1; }
+
+    audio:not([controls]) { display: none; height: 0; }
+
+    [hidden] { display: none; }
+
+    html { font-size: 100%; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ -ms-text-size-adjust: 100%; /* 2 */ }
+
+    html,button,input,select,textarea { font-family: sans-serif; }
+    body { margin: 0; }
+
+    a:focus { outline: thin dotted; }
+    a:active, a:hover { outline: 0; }
+
+    h1 { font-size: 2em; margin: 0.67em 0; }
+    h2 { font-size: 1.5em; margin: 0.83em 0; }
+    h3 { font-size: 1.17em; margin: 1em 0; }
+    h4 { font-size: 1em; margin: 1.33em 0; }
+    h5 { font-size: 0.83em; margin: 1.67em 0; }
+    h6 { font-size: 0.75em; margin: 2.33em 0; }
+
+    abbr[title] {
+        border-bottom: 1px dotted;
+    }
+
+    b,
+    strong {
+        font-weight: bold;
+    }
+
+    blockquote {
+        margin: 1em 40px;
+    }
+
+    dfn {
+        font-style: italic;
+    }
+    mark {
+        background: #ff0;
+        color: #000;
+    }
+
+    p,
+    pre {
+        margin: 1em 0;
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: monospace, serif;
+        _font-family: 'courier new', monospace;
+        font-size: 1em;
+    }
+
+    pre {
+        white-space: pre;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    q {
+        quotes: none;
+    }
+
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+
+    small {
+        font-size: 75%;
+    }
+
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+
+    sup {
+        top: -0.5em;
+    }
+
+    sub {
+        bottom: -0.25em;
+    }
+
+    dl,
+    menu,
+    ol,
+    ul {
+        margin: 1em 0;
+    }
+
+    dd {
+        margin: 0 0 0 40px;
+    }
+
+    menu,
+    ol,
+    ul {
+        padding: 0 0 0 40px;
+    }
+
+    nav ul,
+    nav ol {
+        list-style: none;
+        list-style-image: none;
+    }
+
+    img {
+        border: 0; /* 1 */
+        -ms-interpolation-mode: bicubic; /* 2 */
+    }
+
+    svg:not(:root) {
+        overflow: hidden;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    fieldset {
+        border: 1px solid #c0c0c0;
+        margin: 0 2px;
+        padding: 0.35em 0.625em 0.75em;
+    }
+
+    legend {
+        border: 0; /* 1 */
+        padding: 0;
+        white-space: normal; /* 2 */
+        *margin-left: -7px; /* 3 */
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 100%; /* 1 */
+        margin: 0; /* 2 */
+        vertical-align: baseline; /* 3 */
+        *vertical-align: middle; /* 3 */
+    }
+
+    button,
+    input {
+        line-height: normal;
+    }
+
+    button,
+    html input[type="button"], /* 1 */
+    input[type="reset"],
+    input[type="submit"] {
+        -webkit-appearance: button; /* 2 */
+        cursor: pointer; /* 3 */
+        *overflow: visible;  /* 4 */
+    }
+
+    button[disabled],
+    input[disabled] {
+        cursor: default;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        box-sizing: border-box; /* 1 */
+        padding: 0; /* 2 */
+        *height: 13px; /* 3 */
+        *width: 13px; /* 3 */
+    }
+
+    input[type="search"] {
+        -webkit-appearance: textfield; /* 1 */
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box; /* 2 */
+        box-sizing: content-box;
+    }
+
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
+    textarea {
+        overflow: auto; /* 1 */
+        vertical-align: top; /* 2 */
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    /* Dark blue: #29649F */
+    /* Dark brown: #5D5D5D */
+    /* Light grey: #AEB0B2 */
+    /* Lightest grey: #888888 */
+    
+    html { background: #29649F; }
+    body { color: #29649F; font: 2em/1.7 'TradeGothicLTStdRegular', Georgia, Serif; margin: 0 auto 0 auto; max-width: 1440px; }
+    
+    header { color: #ECECEC; padding: 1em; border-bottom: 2px solid #999; }
+
+    footer { color: #ECECEC; font-size: 0.75em; padding: 1em; border-top: 2px solid #666; }
+    
+    strong { font-family: 'TradeGothicLTStdCnBold'; font-style: bold; }
+    em { font-family: 'TradeGothicLTStdItalic'; font-style: italic; }
+    
+    .wrap { padding: 0 1em 0 1em; }
+    
+    p { margin: 0.25em 0; }
+    p+p { margin-top: 1em; }
+    
+    a { color: #29649F; text-decoration: underline; font-family: 'TradeGothicLTStdCnBold'; background-color: transparent; padding: 0.2em; }
+    a:hover { color: #ECECEC; background-color: #29649F; text-decoration: none; border-bottom: 1px solid; }
+    
+    ul { list-style: none; margin: 0; padding-left: 1em; }
+    ul li:before { content: '→ ';}
+    ol { margin: 0; padding-left: 1.5em; }
+    
+    h1, h2, h3, h4 { font-family: 'TradeGothicLTStdCnBold'; margin: 0; }
+    h1 { margin: 0; text-transform: uppercase; }
+    h4 { font-weight: normal; margin: 0; }
+    
+    blockquote { padding: 0.75em; font-size: 1.3em; margin: 0 0 0 1.5em; }
+    
+    article#odd{ background: url("img/subtle_dots.png"); padding: 1em; border-bottom: 1px solid #999; }
+    article#even{ background: url("img/subtlenet2.png"); padding: 1em; border-bottom: 1px solid #999; }    
+    
+    .btn { text-align: center; display: block; padding: 0.75em; background: #ECECEC; color: #29649F; line-height: 1.8em; width: 10em; margin: 1em; text-decoration: none; border: 5px solid #FFF; border-radius: 5em; }
+    .btn:hover { color: #ECECEC; background: #29649F; border: 5px solid #ECECEC;}
+    
+    img {max-width: 100%; margin: 0; }    
+    
+  </style>
+  
+</head>
+
+<body id="home" onload="">
+    
+    <header>
+  <img src="img/strategic.png" />
+    </header>
+    
+    <article id="odd">
+    
+    <h1>This is an Example of a Header</h1>
+    <h4>Trade Gothic Condensed No2, #29649F</h4>
+
+    <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+    
+    </article>
+    
+    <a class="btn" href="#">This is a Button&nbsp;&nbsp;&nbsp;&#8658;</a>
+
+    <article id="even">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h2>A sub header describing a list</h2>
+
+    <ol>
+       <li>Ordered by number, the first item.</li>
+       <li>The second item.</li>
+    </ol>
+
+    <blockquote><p>This is a blockquote, if you have a larger quote, something that should really be considered, something worth reading quoted by a special kind of someone, perhaps this is the sort of quote you are looking for?</p></blockquote>
+
+    </article>
+
+    <article id="odd">
+
+    <h3>The third and last level of header</h3>
+
+    <ul>
+       <li>A list, defined by bullet points but styled with an arrow(i.e. Strategic&rsquo;s logo/word mark.)</li>
+       <li>The second bullet point.</li>
+    </ul>
+    
+    </article>
+    
+    <footer>
+      <p>You can write copyright stuff, put some important links in the footer, etc.</p>
+    </footer>
+    
+ <!--<img src="img/Style_Tile_Template.jpg" />-->
+  
+</body>
+
+</html>
